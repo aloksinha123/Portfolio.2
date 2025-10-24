@@ -21,7 +21,7 @@ export default function WhackAMoleProject() {
             <div className="project-content">
               <div className="project-image-container">
                 <Image 
-                  src="/images/projects/Screenshot 2025-10-23 203855.png"
+                  src="/images/projects/whack-a-mole-game.png"
                   alt="Whack a Mole Game Screenshot" 
                   width={1200}
                   height={800}

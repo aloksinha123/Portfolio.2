@@ -10,7 +10,7 @@ export default function Projects() {
       category: "Game Development",
       description: "A faithful recreation and creative enhancement of the iconic arcade game, meticulously developed using Python and the Pygame library. Features dynamic difficulty scaling, robust score tracking, and engaging gameplay mechanics.",
       date: "23/10/2025",
-      image: "/images/projects/Screenshot 2025-10-23 203855.png",
+      image: "/images/projects/whack-a-mole-game.png",
       link: "/projects/whack-a-mole",
       tags: ["Python", "Pygame", "Game Development", "UI Design"]
     },
