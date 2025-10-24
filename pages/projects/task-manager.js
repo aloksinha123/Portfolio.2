@@ -17,7 +17,7 @@ export default function TaskManagerProject() {
 
             <div className="project-image-container">
               <img 
-                src="/images/projects/Screenshot 2025-10-23 210420.png" 
+                src="/images/task-manager-logo.png" 
                 alt="Task Manager Project" 
                 className="project-detail-image"
               />

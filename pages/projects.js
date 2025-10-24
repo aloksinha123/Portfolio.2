@@ -18,9 +18,9 @@ export default function Projects() {
       id: 2,
       title: "Task Manager",
       category: "Full-Stack Development",
-      description: "A comprehensive to-do list application built with Java Spring Boot and Thymeleaf. Features task creation, editing, deletion, completion tracking, and interactive statistical dashboard with visual charts showing task progress.",
+      description: "A comprehensive to-do list application built with Java Spring Boot. This application helps users manage and track their daily tasks efficiently. It features a clean dark theme interface, task creation, editing, deletion, and an interactive statistics dashboard that displays task progress in real-time.",
       date: "19/10/2025",
-      image: "/images/projects/Screenshot 2025-10-23 210420.png",
+      image: "/images/task-manager-logo.png",
       link: "/projects/task-manager",
       tags: ["Java", "Spring Boot", "Thymeleaf", "CSS3"]
     },
