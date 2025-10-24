@@ -33,21 +33,27 @@
 .project-image-container {
   position: relative;
   width: 100%;
-  margin-bottom: 3rem;
+  max-width: 500px;
+  margin: 0 auto 3rem;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   border: 3px solid var(--highlight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.project-main-image {
+.project-detail-image {
   width: 100%;
   height: auto;
+  max-height: 400px;
+  object-fit: contain;
   display: block;
   transition: transform 0.5s ease;
 }
 
-.project-image-container:hover .project-main-image {
+.project-image-container:hover .project-detail-image {
   transform: scale(1.03);
 }
 
