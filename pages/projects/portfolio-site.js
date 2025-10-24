@@ -21,7 +21,7 @@ export default function PortfolioSiteProject() {
             <div className="project-content">
               <div className="project-image-container">
                 <Image 
-                  src="/images/projects/Screenshot 2025-10-23 203855.png"
+                  src="/images/projects/portfolio-logo.png"
                   alt="Portfolio Website Screenshot" 
                   width={1200}
                   height={800}
