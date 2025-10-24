@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+  display: flex;
+  padding: 6rem 2rem;
+  min-height: calc(100vh - 80px);
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 4rem 1rem;
+  }
+  
+  .hero-image {
+    margin-top: 2rem;
+  }
+}

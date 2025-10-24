@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.9 595.3">
+  <!-- Orbit rings -->
+  <g fill="none" stroke="#61DAFB" stroke-width="20">
+    <ellipse cx="420.9" cy="297.6" rx="200" ry="75"/>
+    <ellipse cx="420.9" cy="297.6" rx="200" ry="75" transform="rotate(60 420.9 297.6)"/>
+    <ellipse cx="420.9" cy="297.6" rx="200" ry="75" transform="rotate(-60 420.9 297.6)"/>
+  </g>
+  <!-- Center dot -->
+  <circle cx="420.9" cy="297.6" r="35" fill="#61DAFB"/>
+</svg>
