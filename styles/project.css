@@ -6,6 +6,8 @@
 .project-header {
   text-align: center;
   margin-bottom: 3rem;
+  position: relative;
+  z-index: 10;
 }
 
 .project-title {

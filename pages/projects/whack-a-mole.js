@@ -69,6 +69,12 @@ export default function WhackAMoleProject() {
                 </div>
               </div>
             </div>
+
+            <div className="back-button-section">
+              <Link href="/projects" className="btn btn-secondary">
+                ← Back to Projects
+              </Link>
+            </div>
           </div>
         </section>
       </main>

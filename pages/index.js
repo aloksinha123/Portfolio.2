@@ -10,17 +10,17 @@ export default function Home() {
       category: "Game Development",
       description: "A faithful recreation and creative enhancement of the iconic arcade game, meticulously developed using Python and the Pygame library. Features dynamic difficulty scaling, robust score tracking, and engaging gameplay mechanics.",
       date: "23/10/2025",
-      image: "/images/projects/Screenshot 2025-10-23 203855.png",
+      image: "/images/projects/whack-a-mole-game.png",
       link: "/projects/whack-a-mole"
     },
     {
-      id: 2,
-      title: "EDU-CONNECT APP",
-      category: "Backend",
-      description: "A cross-platform mobile and web solution designed to enhance communication and collaboration between teachers, parents, and school administrators.",
-      date: "19/10/2025",
-      image: "/images/projects/Screenshot 2025-10-23 210420.png",
-      link: "/projects/edu-connect"
+      id: 7,
+      title: "Portfolio Website",
+      category: "Web Development",
+      description: "A modern, fully responsive portfolio website built with Next.js and React to showcase projects, skills, and professional experience. Features clean design, smooth animations, and optimized performance.",
+      date: "24/10/2025",
+      image: "/images/portfolio-logo.png",
+      link: "/projects/portfolio-site"
     }
   ];
 
