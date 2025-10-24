@@ -16,13 +16,13 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: "EDU-CONNECT APP",
-      category: "Backend",
-      description: "A cross-platform mobile and web solution designed to enhance communication and collaboration between teachers, parents, and school administrators.",
+      title: "Task Manager",
+      category: "Full-Stack Development",
+      description: "A comprehensive to-do list application built with Java Spring Boot and Thymeleaf. Features task creation, editing, deletion, completion tracking, and interactive statistical dashboard with visual charts showing task progress.",
       date: "19/10/2025",
       image: "/images/projects/Screenshot 2025-10-23 210420.png",
-      link: "/projects/edu-connect",
-      tags: ["Node.js", "MongoDB", "WebSocket", "REST API"]
+      link: "/projects/task-manager",
+      tags: ["Java", "Spring Boot", "Thymeleaf", "CSS3"]
     },
     {
       id: 7,
