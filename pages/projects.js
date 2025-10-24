@@ -25,6 +25,16 @@ export default function Projects() {
       tags: ["Node.js", "MongoDB", "WebSocket", "REST API"]
     },
     {
+      id: 7,
+      title: "Portfolio Website",
+      category: "Web Development",
+      description: "A modern, fully responsive portfolio website built with Next.js and React to showcase projects, skills, and professional experience. Features clean design, smooth animations, and optimized performance.",
+      date: "24/10/2025",
+      image: "/images/projects/Screenshot 2025-10-23 203855.png",
+      link: "/projects/portfolio-site",
+      tags: ["Next.js", "React", "CSS3", "Vercel"]
+    },
+    {
       id: 3,
       title: "AI Task Manager",
       category: "Machine Learning",
