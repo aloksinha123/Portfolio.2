@@ -1937,426 +1937,97 @@ body {
 
   /* Navbar Mobile */
   .nav {
-    padding: 10px 15px !important;
+    position: fixed !important;
+    top: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    transform: none !important;
+    padding: 15px 20px !important;
+    border-radius: 25px !important;
   }
 
   .nav-inner {
-    flex-direction: column;
-    align-items: flex-start !important;
-    gap: 15px;
-  }
-
-  .brand {
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-logo {
-    max-width: 120px !important;
-    height: auto !important;
-  }
-
-  .nav-links {
-    width: 100%;
     flex-direction: column !important;
-    gap: 10px !important;
-    text-align: center;
-  }
-
-  .nav-links a {
-    display: block;
-    width: 100%;
-    padding: 10px !important;
-    font-size: 14px !important;
-  }
-
-  /* Hero Section Mobile */
-  .hero {
-    flex-direction: column-reverse !important;
-    padding: 20px 15px !important;
-    gap: 30px !important;
-    text-align: center;
-  }
-
-  .hero-content {
-    width: 100% !important;
-    padding: 0 !important;
-  }
-
-  .hero-title {
-    font-size: 28px !important;
-    line-height: 1.3 !important;
-    margin-bottom: 15px !important;
-  }
-
-  .hero-title .highlight {
-    display: block;
-    font-size: 32px !important;
-    margin-top: 10px;
-  }
-
-  .hero-text {
-    font-size: 14px !important;
-    line-height: 1.6 !important;
-    margin-bottom: 20px !important;
-    padding: 0 10px;
-  }
-
-  .cta-row {
-    flex-direction: column !important;
-    gap: 12px !important;
-    width: 100% !important;
-  }
-
-  .cta-row .btn {
-    width: 100% !important;
-    max-width: 280px;
-    margin: 0 auto;
-    padding: 12px 20px !important;
-    font-size: 14px !important;
-  }
-
-  .achievements {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 15px !important;
-    margin-top: 30px !important;
-    padding: 0 10px;
-  }
-
-  .achievement-item {
-    padding: 15px 10px !important;
-  }
-
-  .achievement-number {
-    font-size: 28px !important;
-  }
-
-  .achievement-item p {
-    font-size: 11px !important;
-    line-height: 1.4 !important;
-  }
-
-  .hero-image {
-    width: 100% !important;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  .profile-circle {
-    width: 200px !important;
-    height: 200px !important;
-  }
-
-  .profile-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* About Section Mobile */
-  .about-section {
-    padding: 40px 15px !important;
-  }
-
-  .section-title {
-    font-size: 28px !important;
-    margin-bottom: 25px !important;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr !important;
-    gap: 25px !important;
-  }
-
-  .about-image {
-    width: 100% !important;
-    max-width: 280px;
-    margin: 0 auto;
-  }
-
-  .square-image {
-    width: 100% !important;
-    height: auto !important;
-    aspect-ratio: 1/1;
-  }
-
-  .square-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .about-text-content {
-    padding: 0 10px !important;
-    text-align: center;
-  }
-
-  .about-text-content h3 {
-    font-size: 22px !important;
-    margin-bottom: 15px !important;
-  }
-
-  .about-text {
-    font-size: 14px !important;
-    line-height: 1.7 !important;
-    text-align: justify;
-  }
-
-  .signature {
-    font-size: 20px !important;
-    margin-top: 20px !important;
-  }
-
-  /* Projects Section Mobile */
-  .projects-section {
-    padding: 40px 15px !important;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr !important;
-    gap: 25px !important;
-  }
-
-  .card {
-    width: 100% !important;
-    margin: 0 !important;
-  }
-
-  .project-image {
-    width: 100% !important;
-    height: 200px !important;
-    object-fit: cover;
-  }
-
-  .project-content {
-    padding: 20px 15px !important;
-  }
-
-  .card-title {
-    font-size: 20px !important;
-    margin-bottom: 10px !important;
-  }
-
-  .project-category {
-    font-size: 12px !important;
-    padding: 4px 10px !important;
-  }
-
-  .card-desc {
-    font-size: 13px !important;
-    line-height: 1.6 !important;
-    margin: 15px 0 !important;
-  }
-
-  .card-links {
-    flex-direction: column !important;
-    gap: 10px !important;
-  }
-
-  .card-links .btn {
-    width: 100% !important;
-    font-size: 13px !important;
-  }
-
-  .view-all-projects {
-    margin-top: 30px !important;
-    text-align: center;
-  }
-
-  .view-all-projects .btn {
-    width: 100% !important;
-    max-width: 280px;
-  }
-
-  /* Contact Section Mobile */
-  .contact-section {
-    padding: 40px 15px !important;
-  }
-
-  .contact-intro {
-    font-size: 14px !important;
-    line-height: 1.7 !important;
-    margin-bottom: 30px !important;
-    padding: 0 10px;
-    text-align: center;
-  }
-
-  .social-links {
-    flex-wrap: wrap !important;
-    gap: 15px !important;
+    align-items: center !important;
     justify-content: center !important;
-    padding: 0 10px;
-  }
-
-  .social-icon {
-    width: 50px !important;
-    height: 50px !important;
-    font-size: 20px !important;
-  }
-
-  .newsletter-box {
-    padding: 25px 15px !important;
-    margin: 30px 0 !important;
-  }
-
-  .newsletter-box h2 {
-    font-size: 20px !important;
-    margin-bottom: 15px !important;
-  }
-
-  .newsletter-box input {
-    width: 100% !important;
-    padding: 12px !important;
-    font-size: 14px !important;
-    margin-bottom: 15px !important;
-  }
-
-  .newsletter-box button {
-    width: 100% !important;
-    padding: 12px !important;
-    font-size: 14px !important;
-  }
-
-  .contact-button {
-    width: 100% !important;
-    max-width: 280px;
-    margin: 30px auto 0 !important;
-    display: block !important;
-    text-align: center;
-    padding: 12px !important;
-    font-size: 14px !important;
-  }
-
-  /* Quote Section Mobile */
-  .quote-section {
-    padding: 40px 15px !important;
-  }
-
-  .quote-container {
-    padding: 25px 15px !important;
-  }
-
-  .quote-icon {
-    font-size: 28px !important;
-    margin-bottom: 15px !important;
-  }
-
-  .quote-text {
-    font-size: 16px !important;
-    line-height: 1.6 !important;
-    margin-bottom: 15px !important;
-  }
-
-  .quote-author {
-    font-size: 13px !important;
-  }
-
-  /* Footer Mobile */
-  .footer {
-    padding: 30px 15px 20px !important;
-  }
-
-  .footer-content {
-    flex-direction: column !important;
-    gap: 25px !important;
-    text-align: center;
-  }
-
-  .footer-brand {
-    width: 100% !important;
-  }
-
-  .footer-logo-image {
-    max-width: 100px !important;
-    height: auto !important;
-  }
-
-  .footer-description {
-    font-size: 13px !important;
-    line-height: 1.6 !important;
-    margin-top: 15px !important;
-  }
-
-  .footer-social {
-    flex-wrap: wrap !important;
-    gap: 15px !important;
-    justify-content: center !important;
-  }
-
-  .social-icon-circle {
-    width: 45px !important;
-    height: 45px !important;
-    font-size: 18px !important;
-  }
-
-  .footer-bottom {
-    width: 100% !important;
-    margin-top: 20px !important;
-    padding-top: 20px !important;
-  }
-
-  .copyright {
-    font-size: 12px !important;
-  }
-}
-
-/* Extra small devices (phones in portrait, less than 576px) */
-@media (max-width: 575px) {
-  .hero-title {
-    font-size: 24px !important;
-  }
-
-  .hero-title .highlight {
-    font-size: 28px !important;
-  }
-
-  .achievement-number {
-    font-size: 24px !important;
-  }
-
-  .achievement-item p {
-    font-size: 10px !important;
-  }
-
-  .profile-circle {
-    width: 180px !important;
-    height: 180px !important;
-  }
-
-  .section-title {
-    font-size: 24px !important;
-  }
-
-  .card-title {
-    font-size: 18px !important;
-  }
-
-  .project-image {
-    height: 180px !important;
-  }
-}
-
-/* Tablet adjustments (768px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .container {
-    padding: 0 30px !important;
-  }
-
-  .hero {
-    padding: 40px 30px !important;
-  }
-
-  .achievements {
-    grid-template-columns: repeat(4, 1fr) !important;
-  }
-
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
     gap: 20px !important;
   }
 
-  .about-grid {
-    gap: 30px !important;
+  .brand {
+    width: 100% !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 !important;
+  }
+
+  .brand a {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 !important;
+  }
+
+  .nav-logo {
+    max-width: 100px !important;
+    width: 100px !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  .nav-links {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .nav-links a {
+    display: inline-block !important;
+    width: auto !important;
+    padding: 8px 16px !important;
+    font-size: 13px !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    min-width: auto !important;
+  }
+
+  /* Hide the curved border line if it exists */
+  .nav::before,
+  .nav::after {
+    display: none !important;
+  }
+}
+
+/* Extra small mobile adjustments */
+@media (max-width: 575px) {
+  .nav {
+    top: 5px !important;
+    left: 5px !important;
+    right: 5px !important;
+    width: calc(100% - 10px) !important;
+    padding: 12px 15px !important;
+  }
+
+  .nav-logo {
+    max-width: 80px !important;
+    width: 80px !important;
+  }
+
+  .nav-links {
+    gap: 8px !important;
+  }
+
+  .nav-links a {
+    padding: 6px 12px !important;
+    font-size: 12px !important;
   }
 }
