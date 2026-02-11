@@ -16,6 +16,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   color: var(--text);
   background: var(--bg);
@@ -808,159 +813,73 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 
 /* Navbar */
 .nav {
-  background: rgba(17, 17, 17, 0.95);
-  backdrop-filter: blur(10px);
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  width: auto;
-  max-width: 700px;
-  border-radius: 50px;
-  border: 2px solid var(--highlight);
-  padding: 12px 30px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  background: white;
 }
 
 .nav-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 40px;
+
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 50px;
+  width: auto;
 }
 
 .nav-links {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  gap: 25px;
 }
 
-.nav a {
-  color: var(--text);
+.nav-links a {
   text-decoration: none;
-  position: relative;
-  padding: 4px 12px;
+  font-size: 18px;
   font-weight: 500;
-  font-size: 0.85rem;
-  letter-spacing: 0.3px;
-  transition: all 0.3s ease;
-  border-radius: 6px;
-  white-space: nowrap;
+  color: black;
 }
 
-.nav a:hover {
-  background: rgba(255, 215, 0, 0.1);
-  transform: translateY(-1px);
-}
+/* ===== MOBILE FIX ===== */
 
-.nav a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 4px;
-  left: 50%;
-  background-color: var(--highlight);
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
-
-.nav a:hover::after {
-  width: 60%;
-}
-
-.brand {
-  margin-right: auto;
-}
-
-.brand a {
-  padding-left: 0;
-  display: flex;
-  align-items: center;
-}
-
-.brand a:hover {
-  background: none;
-}
-
-.brand a::after {
-  display: none;
-}
-
-.nav-logo {
-  height: auto;
-  width: 80px;
-  transition: transform 0.3s ease;
-  object-fit: contain;
-  margin: -4px 0;
-}
-
-.nav-logo:hover {
-  transform: scale(1.05);
-}
-
-/* Login button special styling */
-.nav a.login-btn {
-  background: transparent;
-  border: 1px solid var(--highlight);
-  padding: 8px 20px;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-}
-
-.nav a.login-btn:hover {
-  background: var(--highlight);
-  color: var(--bg);
-  transform: translateY(-1px);
-}
-
-.nav a.login-btn::after {
-  display: none;
-}
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
-  .nav {
-    max-width: 90%;
+
+  .nav-inner {
+    flex-direction: column;
     padding: 15px 20px;
   }
 
-  .nav-inner {
-    gap: 0.5rem;
+  .nav-logo {
+    height: 40px;
   }
 
   .nav-links {
-    gap: 0.75rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
   }
 
-  .nav a {
-    padding: 6px 12px;
-    font-size: 0.9rem;
+  .nav-links a {
+    font-size: 16px;
   }
 
-  .brand a {
-    font-size: 1.1rem;
-  }
 }
 
-@media (max-width: 640px) {
-  .nav {
-    top: 10px;
-  }
-  
-  .nav a {
-    padding: 6px 8px;
-    font-size: 0.85rem;
-  }
-  
-  .nav a.login-btn {
-    padding: 6px 12px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-.brand a{font-weight:700}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 /* Landing Page */
 .landing-page {
@@ -1912,122 +1831,4 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
   .hero-right{width:100%}
   .avatar{width:140px;height:140px}
   .nav-inner{padding:12px 0}
-}
-/* Mobile Responsive Styles - Add to globals.css */
-
-/* Base Mobile Optimization */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-/* Container adjustments for mobile */
-@media (max-width: 768px) {
-  .container {
-    padding: 0 15px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  /* Navbar Mobile */
-  .nav {
-    position: fixed !important;
-    top: 10px !important;
-    left: 10px !important;
-    right: 10px !important;
-    width: calc(100% - 20px) !important;
-    max-width: calc(100% - 20px) !important;
-    transform: none !important;
-    padding: 15px 20px !important;
-    border-radius: 25px !important;
-  }
-
-  .nav-inner {
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 20px !important;
-  }
-
-  .brand {
-    width: 100% !important;
-    text-align: center !important;
-    display: flex !important;
-    justify-content: center !important;
-    margin: 0 !important;
-  }
-
-  .brand a {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    padding: 0 !important;
-  }
-
-  .nav-logo {
-    max-width: 100px !important;
-    width: 100px !important;
-    height: auto !important;
-    display: block !important;
-  }
-
-  .nav-links {
-    width: 100% !important;
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 10px !important;
-    text-align: center !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .nav-links a {
-    display: inline-block !important;
-    width: auto !important;
-    padding: 8px 16px !important;
-    font-size: 13px !important;
-    white-space: nowrap !important;
-    text-align: center !important;
-    min-width: auto !important;
-  }
-
-  /* Hide the curved border line if it exists */
-  .nav::before,
-  .nav::after {
-    display: none !important;
-  }
-}
-
-/* Extra small mobile adjustments */
-@media (max-width: 575px) {
-  .nav {
-    top: 5px !important;
-    left: 5px !important;
-    right: 5px !important;
-    width: calc(100% - 10px) !important;
-    padding: 12px 15px !important;
-  }
-
-  .nav-logo {
-    max-width: 80px !important;
-    width: 80px !important;
-  }
-
-  .nav-links {
-    gap: 8px !important;
-  }
-
-  .nav-links a {
-    padding: 6px 12px !important;
-    font-size: 12px !important;
-  }
 }

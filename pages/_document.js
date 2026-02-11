@@ -2,8 +2,9 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="utf-8" />
         <link rel="icon" type="image/png" href="/images/logo alok.png" />
         <link rel="shortcut icon" type="image/png" href="/images/logo alok.png" />
