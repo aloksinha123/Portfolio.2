@@ -17,9 +17,10 @@ export default function About() {
                 <a href="mailto:aloksinha081104@gmail.com" className="profile-email">
                   hello@alok.dev
                 </a>
-                <a href="/resume.pdf" className="download-cv-btn" download>
+                <a href="/alokcv.pdf" className="download-cv-btn" target="_blank" rel="noopener noreferrer">
                   Download CV
                 </a>
+
               </div>
 
               <div className="profile-card">

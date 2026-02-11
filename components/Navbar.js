@@ -17,11 +17,6 @@ export default function Navbar() {
           <Link href="/projects" legacyBehavior><a>Projects</a></Link>
           <Link href="/contact" legacyBehavior><a>Contact Me</a></Link>
         </nav>
-        <Link href="/login" legacyBehavior>
-          <a className="login-btn">
-            <i className="fas fa-arrow-right-to-bracket"></i> Login
-          </a>
-        </Link>
       </div>
     </header>
   );

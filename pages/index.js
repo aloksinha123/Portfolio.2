@@ -53,7 +53,12 @@ export default function Home() {
               Your goals drive my code, and together, we build experiences that matter.
             </p>
             <div className="cta-row">
-              <a href="/resume.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer" download="Alok_Sinha_Resume.pdf">
+              <a
+                href="/alokcv.pdf"
+                className="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fas fa-download"></i> Download Resume
               </a>
               <a href="/about" className="btn btn-secondary">
@@ -240,5 +245,8 @@ export default function Home() {
     </div>
   );
 }
+
+
+
 
 
